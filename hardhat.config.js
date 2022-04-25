@@ -39,35 +39,11 @@ module.exports = {
   },
   solidity: "0.8.4",
   networks: {
-    bsc_testnet: {
-      url: process.env.BSC_TESTNET_URL,
-      chainId: 97,
+    maticmum: {
+      url: process.env.MATIC_TESTNET_URL,
+      chainId: 80001,
       gasPrice: 20000000000,
-      accounts: [`0x${process.env.BSC_TESTNET_KEY}`]
-    },
-    harmony_testnet: {
-      url: process.env.HARMONY_TESTNET_URL,
-      chainId: 1666700000,
-      gasPrice: 20000000000,
-      accounts: [`0x${process.env.HARMONY_TESTNET_KEY}`]
-    },
-    platon_testnet: {
-      url: process.env.PLATON_TESTNET_URL,
-      chainId: 210309,
-      gasPrice: 20000000000,
-      accounts: [`0x${process.env.PLATON_TESTNET_KEY}`]
-    },
-    parastate_testnet: {
-      url: process.env.PARASTATE_TESTNET_URL,
-      chainId: 123,
-      gasPrice: 20000000000,
-      accounts: [`0x${process.env.PARASTATE_TESTNET_KEY}`]
-    },
-    avalanche_testnet: {
-      url: process.env.AVALANCHE_TESTNET_URL,
-      chainId: 43113,
-      gasPrice: 25000000000,
-      accounts: [`0x${process.env.AVALANCHE_TESTNET_KEY}`]
+      accounts: [`0x${process.env.MATIC_TESTNET_KEY}`]
     },
   }
 };
